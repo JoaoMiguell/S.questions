@@ -23,6 +23,7 @@ export default async function handler(
         id: true
       }
     })
+    prisma.$disconnect()
     return res.status(201).json(idRoom)
 
   } else {
