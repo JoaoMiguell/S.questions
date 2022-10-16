@@ -14,6 +14,7 @@ export default function FormCreate() {
     })
     .then((response) => response.json())
     .then((data) => {
+      window.localStorage.setItem("idRoom", data.id)
       router.push(`/room/${data.id}`)
     });
   }

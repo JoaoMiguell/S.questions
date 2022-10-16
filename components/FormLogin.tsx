@@ -8,6 +8,7 @@ export default function FormLogin() {
 
     if (roomId == undefined) return;
 
+    window.localStorage.setItem("idRoom", roomId)
     router.push(`/room/${roomId}`)
   }
 

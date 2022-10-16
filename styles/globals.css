@@ -6,6 +6,10 @@ html {
   height: 100vh;
 }
 
+#__next {
+  height: 100vh;
+}
+
 #principal {
   height: 100vh;
 }
