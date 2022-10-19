@@ -27,10 +27,6 @@ const Room: NextPage = () => {
       setMessages(data)
     })
   },[])
-
-  function GetData() {
-    
-  }
   
   function sendMessage() {
     var newMessage: string|undefined = document.querySelector("textarea")?.value
@@ -51,7 +47,7 @@ const Room: NextPage = () => {
     navigator.clipboard.writeText(`${window.location.href}`)
   }
   return (
-    <div className="bg-slate-800 h-full text-white">
+    <div className="bg-slate-800 text-white">
       <div className=" mx-[10%] h-[100%] max-w-[90%]">
         <header className="flex items-center justify-between ">
           <Link href={"/"} >
