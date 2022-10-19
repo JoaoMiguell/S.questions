@@ -58,10 +58,12 @@ const Room: NextPage = () => {
               <p className="mr-2 text-blue-500">#{id}</p> 
               <Image src={ShareIcon} alt="compartilhar" />  
             </button>
-            <button className="border-2 border-blue-500 bg-blue-500 p-3 rounded-md flex items-center mt-2">
+            <Link href={"/"} >
+              <div className="border-2 border-blue-500 bg-blue-500 p-3 rounded-md flex items-center mt-2">
               <Image src={UserIcon} alt="compartilhar" />
               <p className="ml-2 text-white">Criar sala</p>
-            </button>
+              </div>
+            </Link>
           </div>
         </header>
         <main className="mt-16">
